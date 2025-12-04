@@ -1,0 +1,31 @@
+{
+  "name": "sol-reader",
+  "version": "0.1.0",
+  "description": "CLI to display a Solana wallet's SOL balance and USD value using a Switchboard price feed.",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "ts-node src/index.ts",
+    "lint": "eslint . --ext .ts"
+  },
+  "dependencies": {
+    "@solana/web3.js": "^1.95.3",
+    "@switchboard-xyz/on-demand": "^3.7.3",
+    "@switchboard-xyz/solana.js": "^3.2.5",
+    "commander": "^12.1.0",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "@tsconfig/node18": "^18.2.4",
+    "@types/node": "^22.9.0",
+    "@types/commander": "^2.12.5",
+    "@typescript-eslint/eslint-plugin": "^8.14.0",
+    "@typescript-eslint/parser": "^8.14.0",
+    "eslint": "^9.12.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.31.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
+  }
+}
